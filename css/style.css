@@ -1,0 +1,140 @@
+.navbar{
+    height: 9vh;
+}
+.footer{
+    height: 9vh;
+}
+.categories, .mainContent{
+    min-height: 82vh;
+}
+
+.jumbotron{
+    /* background-image: url(https://2.bp.blogspot.com/-ATaXlWj5uS4/V_oIi-4ElUI/AAAAAAAABd4/8xach0qJIF0PfiR_xttHYGkKMx4Vcfk4ACLcB/s1600/IMG_20161009_160526_947.jpg);
+    background-size: cover; */
+    padding: 20vh 0px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.categories .card{
+    height: 450px;
+    overflow:-moz-hidden-unscrollable;
+}
+.categories .card img{
+    height: 100%;
+    object-fit: fill;
+}
+.categories .card-img-overlay{
+    margin-top: 100%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+.categories{
+    background-color: #212529;
+    padding: 4% 0;
+}
+
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    height: 230px;
+    width: 100%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    height: 50%;
+    object-fit: cover;
+    width: 20%;
+    float: left;
+}
+.food-menu-img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 4%;
+}
+
+.food-price, .total-food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+.footer{
+    background-color: #212529;
+    padding: 1% 0;
+}
+
+.order{
+    width: 85%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+#payment option{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+fieldset{
+    border: 1px solid #212529;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+/* INPUT BORDER */
+.cart input[type="text"], .cart input[type="number"], .cart input[type="email"], .cart input[type="tel"], .cart textarea{
+    border: 0.5px solid #212529;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 992px){
+    .categories .card{
+        height: 300px;
+        overflow:-moz-hidden-unscrollable;
+    }
+    .categories .card img{
+        height: 100%;
+    }
+    .categories .card-img-overlay{
+        margin-top: 80%;
+    }
+}

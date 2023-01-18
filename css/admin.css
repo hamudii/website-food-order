@@ -1,0 +1,12 @@
+.navbar{
+    height:8vh;
+}
+.footer{
+    height: 8vh;
+}
+.footer .container{
+    padding-top: 15px;
+}
+.admin{
+    min-height: 84vh;
+}

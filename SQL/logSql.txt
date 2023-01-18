@@ -1,0 +1,43 @@
+use food_order;
+create table kategori (
+    id_kategori int primary key NOT NULL auto_increment,
+    nama varchar(50) NOT NULL,
+    nama_gambar varchar(50) NOT NULL,
+    statuss varchar(50) NOT NULL);
+
+create table menu (
+    id_menu int primary key NOT NULL auto_increment,
+    id_kategori int NOT NULL references kategori(id_kategori),
+    nama varchar(30) NOT NULL,
+    nama_gambar varchar(50) NOT NULL,
+    deskripsi text NOT NULL,
+    harga int NOT NULL,
+    status varchar(50) NOT NULL);
+
+create table kustomer (
+    id_kustomer int NOT NULL primary key auto_increment,
+    nama varchar(150) NOT NULL,
+    telp varchar(20) NOT NULL,
+    alamat text NOT NULL);
+
+create table orders (
+    id_orders int NOT NULL primary key auto_increment,
+    id_menu int NOT NULL references menu(id_menu),
+    id_kustomer int NOT NULL references kustomer(id_kustomer),
+    quantity int,
+    tgl date NOT NULL,
+    payment varchar(50) NOT NULL,
+    status varchar(50) NOT NULL);
+
+create table admin (
+    id_admin int NOT NULL primary key auto_increment,
+    username varchar(150) NOT NULL,
+    password varchar(150) NOT NULL);
+
+ALTER TABLE kategori AUTO_INCREMENT = 10;
+ALTER TABLE menu AUTO_INCREMENT = 100;
+ALTER TABLE kustomer AUTO_INCREMENT = 50;
+ALTER TABLE orders AUTO_INCREMENT = 2000;
+ALTER TABLE admin AUTO_INCREMENT = 1;
+ALTER TABLE `admin` ADD UNIQUE(`username`);
+INSERT INTO admin VALUES (NULL, 'admin', 'admin');
